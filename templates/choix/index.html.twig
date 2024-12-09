@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Choix{% endblock %}
+
+{% block body %}
+<style>
+</style>
+<div class="choix">
+    <fieldset>
+        <legend>Vous êtes...</legend>
+        <form action="{{ path('app_mesure') }}" method="post">
+            <label>
+                <input type="radio" name="type" value="particulier" checked>
+                un Particulier
+            </label><br>
+            <label>
+                <input type="radio" name="type" value="entreprise">
+                une Entreprise
+            </label><br><br>
+            <button type="submit">Suite</button>
+        </form>
+    </fieldset>
+</div>
+{% endblock %}

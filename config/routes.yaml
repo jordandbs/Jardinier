@@ -3,3 +3,16 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+choix:
+    path: /choix
+    controller: App\Controller\ChoixController::index
+
+mesure:
+    path: /mesure
+    controller: App\Controller\MesureController::index
+
+
+devis:
+    path: /devis
+    controller: App\Controller\DevisController::index

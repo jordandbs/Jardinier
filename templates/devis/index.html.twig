@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DevisController!{% endblock %}
+
+{% block body %}
+<style>
+</style>
+
+<div class="Devis">
+    <h2>Vous êtes un {{ type }}</h2>
+    <h1>Tarif calculé pour votre devis</h1>
+    <p>Le prix total pour votre demande est : <strong>{{ prix }} €</strong></p>
+
+    <a href="{{ path('app_accueil') }}">Retour à l'accueil</a>
+</div>
+{% endblock %}

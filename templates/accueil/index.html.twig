@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+<style>
+    .accueil {
+        text-align: center;
+        margin-top: 100px;
+    }
+    .accueil h1 {
+        font-size: 3em;
+    }
+    .accueil h2 {
+        font-size: 2em;
+    }
+    .accueil a {
+        display: block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 1.5em;
+    }
+    .accueil img {
+        margin-top: 20px;
+        width: 30%;
+    }
+</style>
+
+<div class="accueil">
+    <h1>Le P'tit j@rdinier</h1>
+    <h2>Des professionnels à votre service</h2>
+    <a href="{{ path('choix') }}">Obtenir un devis en ligne pour une taille de haie</a>
+
+    <img src={{ asset('images/jardinier.webp') }}>
+</div>
+{% endblock %}

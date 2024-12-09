@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mesure{% endblock %}
+
+{% block body %}
+<style>
+</style>
+
+<div class="mesure">
+  
+    <form action="{{ path('app_devis') }}" method="post">
+            <select id="type-haie" name="type-haie">
+                <option value="">--Choisir votre type de haie--</option>
+                <option value="haie1">Abélia</option>
+                <option value="haie2">Laurier</option>
+                <option value="haie3">Thuya</option>
+                <option value="haie4">Troène</option>
+            </select>
+            <br><br>
+    
+            <label for="longueur">Longueur :</label>
+            <input type="text" id="longueur" name="longueur">
+            <br><br>
+    
+            <label for="hauteur">Hauteur :</label>
+            <input type="text" id="hauteur" name="hauteur">
+            <br><br>
+    
+            <button type="submit">Suite</button>
+        </form>
+</div>
+
+{% endblock %}
